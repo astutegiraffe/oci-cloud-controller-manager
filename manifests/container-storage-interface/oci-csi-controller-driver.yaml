@@ -31,6 +31,7 @@ spec:
             - --enable-leader-election=true
             - --leader-election-type=leases
             - --leader-election-namespace=kube-system
+            - --metrics-address=:8080
           volumeMounts:
             - name: config
               mountPath: /etc/oci/
